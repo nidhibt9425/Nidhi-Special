@@ -65,6 +65,22 @@
   nav a:hover {
     color: #ffcc00;
   }
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstSection > div {
+    width: 90%;
+    text-align: center;
+  }
+
+  .rightSection img {
+    width: 100%;
+  }
+}
+
   .firstSection{
     display: flex;
     justify-content: space-around;
@@ -319,6 +335,7 @@ color:gray;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
   
   /* Extra Info Section (for about.html) */
   .extra-info {
