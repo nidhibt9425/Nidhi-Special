@@ -22,6 +22,12 @@ body {
   padding: 10px 20px;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* sirf chhoti screen pe vertical */
+    gap: 10px;
+  }
+}
 
 .closing-time {
   font-size: 14px;
@@ -40,6 +46,13 @@ nav {
   z-index: 999;
   position: relative;
 }
+.rightSection img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -49,8 +62,14 @@ nav ul {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  flex-direction:row;
+  
 }
-
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 nav ul li a {
   color: white;
   text-decoration: none;
