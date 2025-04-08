@@ -152,6 +152,57 @@ font-size: 2rem;
     /* background: rgba(0, 60, 255, 0.552); */
     background:violet ;
   }
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #ffcc00;
+}
+
+/* Main Section */
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 110px 0;
+}
+
+.leftSection, .rightSection {
+  width: 45%;
+}
+
+.rightSection img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .leftSection, .rightSection {
+    width: 90%;
+  }
+}
+
   
   /* Hero Section (for index.html) */
   .hero {
