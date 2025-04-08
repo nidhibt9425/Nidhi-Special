@@ -54,7 +54,7 @@ nav {
 }
 
 .nav-links a {
-  color: purple;
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
@@ -63,7 +63,7 @@ nav {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: purple;
+  color: white;
 }
 
 .closing-time {
@@ -199,6 +199,47 @@ nav {
 .btn:hover {
   background: violet;
 }
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    /* background:rgba(0, 60, 255, 0.552); */
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color:gray; /* Deep red accent */
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: gray;
+  }
+  #rm{
+    color: rgb(73, 43, 226);;
+  }
+  #why section
+  .why h2{
+  
+    color: gray;
+  }
+  .why p{
+    color: pink;
+  }
+  #pr{
+    color:rgb(73, 43, 226);;
+  }
+  .deliver h2{
+/* text-decoration-color: blac
+cok; */
+color:gray;
+  }
+  .deliver p{
+    color:pink;
+  }
 
 /* Menu Section */
 .menu {
