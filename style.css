@@ -12,18 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header Top */
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: black;
-  color: white;
-  padding: 10px 20px;
-  font-weight: 600;
-}
-
-
 
 /* Navigation */
 nav {
