@@ -63,7 +63,25 @@ nav {
   color:black;
   margin-left: 20px;
 }
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
 
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
 
 /* First Section */
 .firstSection {
