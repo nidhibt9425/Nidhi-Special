@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,20 +19,21 @@
   </header>
 
   <!-- Navigation -->
- <nav>
-  <div class="nav-container">
-    <div class="logo">Royal King Dhaba</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#">Visit Us</a></li>
-      <li><a href="#">Instagram</a></li>
-    </ul>
-  </div>
-</nav> 
-  <!-- Main Hero Section -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Royal King Dhaba</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+        <li><a href="https://www.instagram.com/royal.king.dhaba" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+  <!-- Hero Section -->
   <main>
     <section class="firstSection">
       <div class="leftSection">
@@ -43,34 +44,32 @@
         <span id="element"></span>
 
         <div class="buttons">
-          <button class="btn" onclick="window.open('https://www.instagram.com/royal.king.dhaba?igsh=MWJuN3U2YXVwcHp2Nw==')">
+          <button class="btn" onclick="window.open('https://www.instagram.com/royal.king.dhaba')">
             <i class="fab fa-instagram"></i> Join Us
           </button>
-          <button class="btn" onclick="window.open('https://maps.app.goo.gl/NDY5apfNfQf8QKdQ9?g_st=com.google.maps.preview.copy')">
+          <button class="btn" onclick="window.open('https://maps.app.goo.gl/NDY5apfNfQf8QKdQ9')">
             <i class="fas fa-map-marker-alt"></i> Directions
           </button>
         </div>
       </div>
-
       <div class="rightSection">
         <img src="km.jpg" alt="Royal Dhaba Banner">
       </div>
     </section>
   </main>
-  
-  <!-- Hero Section -->
+
+  <!-- Restaurant Highlights -->
   <section class="hero">
     <h1>Welcome to Royal Dhaba King</h1>
     <p>Authentic Indian cuisine served with royal hospitality.</p>
-    <span id="rm">
-      
-    </span>
-    <a href="menu.html" class="btn"><i class="fas fa-utensils"></i>       View Menu</a>
+    <span id="rm"></span>
+    <a href="menu.html" class="btn"><i class="fas fa-utensils"></i> View Menu</a>
   </section>
-<hr>
-  <!-- "Why Royal Dhaba?" Section -->
+
+  <hr>
+
+  <!-- Why Choose Us -->
   <section class="why">
-    
     <h2>Why Royal Dhaba?</h2>
     <p>
       At Royal Dhaba King, we combine traditional recipes with modern service to deliver an unparalleled dining experience.
@@ -79,18 +78,15 @@
     <span id="pr"></span>
   </section>
 
-  <!-- "We Deliver Fast" Section -->
+  <!-- Delivery Section -->
   <section class="deliver">
-    <h2> <i class="fas fa-truck"></i> Free Deliver </h2>
-    <p>
-      Whether you dine in or order take-away, our team ensures your meal is prepared fresh and delivered swiftly.
-      Experience speed and quality in every bite!
-    </p>
+    <h2><i class="fas fa-truck"></i> Free Delivery</h2>
+    <p>Whether you dine in or order take-away, our team ensures your meal is prepared fresh and delivered swiftly.</p>
   </section>
 
-  <!-- Gallery Section -->
+  <!-- Gallery -->
   <section class="gallery">
-    <h2>Your Delicious Food NearBy You</h2>
+    <h2>Your Delicious Food Near You</h2>
     <div class="image-flex">
       <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Ambience 1">
       <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Ambience 2">
@@ -99,50 +95,56 @@
     </div>
   </section>
 
-  <!-- Visit Us Section -->
+  <!-- Visit Us -->
   <section id="visit" class="visit">
     <hr>
     <h2>Visit Us</h2>
-    <p>Located at: Near Highway, City Name, State</p>
+    <p>Located at: Near Highway, Bramsthan, Azamgarh</p>
     <span id="cl"></span>
-    <a href="https://maps.app.goo.gl/NDY5apfNfQf8QKdQ9?g_st=com.google.maps.preview.copy" target="_blank" class="btn">Get Directions</a>
+    <a href="https://maps.app.goo.gl/NDY5apfNfQf8QKdQ9" target="_blank" class="btn">Get Directions</a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Royal Dhaba King | Made with love for foodies &<i class="fas fa-phone"></i>
-
-      <a href="tel:+918881265870">Call me at ‪+918881265870‬</a>   </p>
+    <p>&copy; 2025 Royal Dhaba King | Made with love for foodies |
+      <i class="fas fa-phone"></i> <a href="tel:+918881265870">+91 88812 65870</a>
+    </p>
   </footer>
 
   <!-- Back-to-Top Button -->
   <button id="back-to-top" title="Back to Top">↑</button>
 
-  <script src="script.js"></script>\
+  <!-- Scripts -->
+  <script src="script.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script>
- var typed=new Typed('#element',{ 
-    strings:['Royal King Dhabha','Delicios Food',' Free Delivery'], 
-    typeSpeed: 50, 
-  }); 
-  </script>
   <script>
-    var typed=new Typed('#cl',{ 
-       strings:['Near Bhawarnath Mandir','Royal King Dhaba',' Bramsthan Azamgarh'], 
-       typeSpeed: 50, 
-     }); 
-     </script>
-   <script>
-    var typed=new Typed('#rm',{ 
-       strings:['<i class="fas fa-coffee"></i> - Cold Coffee At 100 Only',' <i class="fas fa-ice-cream"></i> - Ice Cream At 50 only',' <i class="fas fa-pizza-slice"></i> - Pizza Only At 200'], 
-       typeSpeed: 50, 
-     }); 
-     </script>
-     <script>
-      var typed=new Typed('#pr',{ 
-         strings:['<i class="fas fa-drink"></i> - Cold Drink At 50',' <i class="fas fa-burger"></i> Burger At 50 Only',' <i class="fas fa-donut"></i> Donut At 40 '], 
-         typeSpeed: 50, 
-       }); 
-       </script>
+    new Typed('#element', {
+      strings: ['Royal King Dhabha', 'Delicious Food', 'Free Delivery'],
+      typeSpeed: 50,
+    });
+
+    new Typed('#cl', {
+      strings: ['Near Bhawarnath Mandir', 'Royal King Dhaba', 'Bramsthan Azamgarh'],
+      typeSpeed: 50,
+    });
+
+    new Typed('#rm', {
+      strings: [
+        '<i class="fas fa-coffee"></i> Cold Coffee at ₹100',
+        '<i class="fas fa-ice-cream"></i> Ice Cream at ₹50',
+        '<i class="fas fa-pizza-slice"></i> Pizza at ₹200'
+      ],
+      typeSpeed: 50,
+    });
+
+    new Typed('#pr', {
+      strings: [
+        '<i class="fas fa-glass-martini-alt"></i> Cold Drink at ₹50',
+        '<i class="fas fa-hamburger"></i> Burger at ₹50',
+        '<i class="fas fa-drumstick-bite"></i> Chicken at ₹100'
+      ],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
