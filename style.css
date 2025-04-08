@@ -27,8 +27,8 @@ body {
 
 /* Navigation */
 nav {
-  background-color: #1a1a2e; /* Dark navy background */
-  color: rgb(0,0,33);
+  background-color: rgb(0,0,33); /* Dark navy background */
+  color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -221,7 +221,7 @@ nav {
   #rm{
     color: rgb(73, 43, 226);;
   }
-  #why section
+  
   .why h2{
   
     color: gray;
@@ -233,8 +233,6 @@ nav {
     color:rgb(73, 43, 226);;
   }
   .deliver h2{
-/* text-decoration-color: blac
-cok; */
 color:gray;
   }
   .deliver p{
