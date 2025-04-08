@@ -15,7 +15,7 @@ body {
 
 /* Navigation */
 nav {
-  background-color:rgb(0, 0,33); 
+  background-color: #1a1a2e; /* Dark navy background */
   color: white;
   position: sticky;
   top: 0;
@@ -32,7 +32,7 @@ nav {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
-  color:white;
+  color: white;
 }
 
 .nav-links {
@@ -55,12 +55,11 @@ nav {
 }
 
 .closing-time {
-  background-color:white; /* green */
+  background-color: #28a745; /* green */
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 1.1rem;
-  /* align-items: flex-end; */
-  color:black;
+  font-size: 0.9rem;
+  color: white;
   margin-left: 20px;
 }
 @media (max-width: 768px) {
@@ -82,6 +81,7 @@ nav {
     display: block;
   }
 }
+
 
 /* First Section */
 .firstSection {
