@@ -28,7 +28,7 @@ body {
 /* Navigation */
 nav {
   background-color: #1a1a2e; /* Dark navy background */
-  color: white;
+  color: rgb(0,0,33);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -44,7 +44,7 @@ nav {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
-  color: white;
+  color: purple;
 }
 
 .nav-links {
@@ -54,7 +54,7 @@ nav {
 }
 
 .nav-links a {
-  color: white;
+  color: purple;
   text-decoration: none;
   font-weight: 500;
 }
@@ -63,66 +63,19 @@ nav {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: white;
+  color: purple;
 }
 
 .closing-time {
-  background-color: #28a745; /* green */
+  background-color: green; /* green */
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.9rem;
-  color: white;
+  color: blue;
   margin-left: 20px;
 }
 
-nav {
-  background-color: #1a1a2e; /* Dark navy background */
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: white;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-}
-
-.closing-time {
-  background-color: #28a745; /* green */
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  color: white;
-  margin-left: 20px;
-}
 /* First Section */
 .firstSection {
   display: flex;
