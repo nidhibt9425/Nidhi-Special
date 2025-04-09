@@ -51,6 +51,7 @@ nav {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-direction:row;
 }
 
 .nav-links a {
