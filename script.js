@@ -23,10 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-  const menuToggle = document.getElementById('menu-toggle');
+  const toggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
-
-menuToggle.addEventListener('click', () => {
+toggle addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
