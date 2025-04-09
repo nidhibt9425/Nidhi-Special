@@ -27,8 +27,8 @@ body {
 
 /* Navigation */
 nav {
-  background-color:rgb(0, 0,33); 
-  color: white;
+  background-color:green; 
+  color:black;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,7 +37,6 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 20px;
 }
 
@@ -49,7 +48,7 @@ nav {
 
 .nav-links {
   list-style: none;
-  display: none;
+  display: flex;
   flex-direction:row;
   gap:20px;
 }
@@ -81,15 +80,7 @@ nav {
   .nav-links {
     flex-direction: row;
     position: absolute;
-    display:none;
-  
-  
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: row;
+    display:flex;
   }
 }
 /* First Section */
