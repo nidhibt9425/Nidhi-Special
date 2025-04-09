@@ -81,13 +81,18 @@ nav {
     flex-direction: row;
   
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
+  
+    display:flex;
   
   }
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    ...
+  }
+}
 /* First Section */
 .firstSection {
   display: flex;
