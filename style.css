@@ -84,7 +84,9 @@ nav {
     top: 60px;
     right: 0;
     width: 100%;
-    display: none;}
+  
+  }
+}
 
 /* First Section */
 .firstSection {
@@ -208,7 +210,7 @@ nav {
     transition: background 0.3s ease;
   }
   
-  btn:hover {
+  .btn:hover {
     /* background: rgba(0, 60, 255, 0.552); */
     background:violet ;
   }
@@ -461,8 +463,8 @@ font-style: italic;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: blue;
-    color: white;
+    background-color: Green;
+    color: Black;
     border: none;
     padding: 10px 15px;
     border-radius: 50%;
@@ -473,9 +475,4 @@ font-style: italic;
   }
   
   /* Responsive Navigation */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
+  
