@@ -384,8 +384,13 @@ color:gray;
   }
   .visit p{
     color:white;
+    margin:20px 0;
   
   }
+. visit a{
+  background-color:violet;
+  
+}
   footer{
     background-color: rgb(0, 0,33);
   }
