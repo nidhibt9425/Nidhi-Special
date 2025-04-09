@@ -83,13 +83,8 @@ nav {
     top: 60px;
     right: 0;
     width: 100%;
-    display: flex;}
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: row;
-    ...
-  }
-}
+    display: none;}
+
 /* First Section */
 .firstSection {
   display: flex;
