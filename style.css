@@ -81,12 +81,7 @@ nav {
   .nav-links {
     flex-direction: row;
     position: absolute;
-  top:60px;
-    right:0;
-
-  
-    display:none;
-  
+     display:none;
   }
 }
 @media (max-width: 768px) {
