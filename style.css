@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(0,0,33);
+  background: black;
   color: white;
   padding: 10px 20px;
   font-weight: 600;
@@ -27,8 +27,8 @@ body {
 
 /* Navigation */
 nav {
-  background-color:green; 
-  color:black;
+  background-color:rgb(0, 0,33); 
+  color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,6 +37,7 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
 }
 
@@ -49,15 +50,15 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 20px;
   flex-direction:row;
-  gap:20px;
+  justify-content:flex-end;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  
 }
 
 .menu-toggle {
@@ -80,7 +81,17 @@ nav {
   .nav-links {
     flex-direction: row;
     position: absolute;
-    display:flex;
+  top:60px;
+    right:0;
+    width:100%;
+    display:none;
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
   }
 }
 /* First Section */
