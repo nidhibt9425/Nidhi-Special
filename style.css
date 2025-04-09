@@ -79,7 +79,7 @@ font-weight:500;
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: rgb(0,0,33);
+    background-color: purple;
     position: absolute;
     top: 60px;
     right: 0;
