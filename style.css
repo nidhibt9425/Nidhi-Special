@@ -37,7 +37,7 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   padding: 10px 20px;
 }
 
@@ -89,11 +89,6 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: row;
-  }
-}
 /* First Section */
 .firstSection {
   display: flex;
