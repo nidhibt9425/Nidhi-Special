@@ -52,6 +52,7 @@ nav {
   display: flex;
   gap: 20px;
   flex-direction:row;
+  justify-content:flex-end;
 }
 
 .nav-links a {
@@ -82,7 +83,7 @@ nav {
   
     position: absolute;
   
-    display:flex;
+    display:none;
   
   }
 }
@@ -90,7 +91,6 @@ nav {
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: row;
-    ...
   }
 }
 /* First Section */
