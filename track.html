@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Package Tracking</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    USA TRACKING
+  </div>
+
+  <h1>Track Your Package</h1>
+
+  <p class="subtitle">
+    Enter your USPS, UPS or FedEx tracking number.
+  </p>
+
+  <div class="tracking-box">
+
+    <input
+      type="text"
+      id="trackingInput"
+      placeholder="Tracking Number"
+    >
+
+    <button onclick="trackPackage()">
+      Track Package
+    </button>
+
+  </div>
+
+  <div class="result" id="resultBox">
+
+    <h2>Shipment Status</h2>
+
+    <div class="info">
+      <strong>Tracking ID:</strong>
+      <span id="trackId"></span>
+    </div>
+
+    <div class="info">
+      <strong>Carrier:</strong>
+      <span id="carrier"></span>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="timeline">
+
+      <div class="step active">
+        Shipment Info Received
+      </div>
+
+      <div class="step active">
+        Package In Transit
+      </div>
+
+      <div class="step">
+        Out For Delivery
+      </div>
+
+      <div class="step">
+        Delivered
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
