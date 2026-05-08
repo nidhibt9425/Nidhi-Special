@@ -1,19 +1,22 @@
-function trackPackage(){
+function checkAccess(){
+
+    const selectedCountry =
+        document.getElementById("countrySelect").value;
 
     const trackingInput =
         document.getElementById("trackingInput").value;
 
-    const resultBox =
-        document.getElementById("resultBox");
+    const trackingResult =
+        document.getElementById("trackingResult");
+
+    const blockedResult =
+        document.getElementById("blockedResult");
 
     const trackId =
         document.getElementById("trackId");
 
-    const carrier =
-        document.getElementById("carrier");
-
-    const status =
-        document.getElementById("status");
+    trackingResult.style.display = "none";
+    blockedResult.style.display = "none";
 
     if(trackingInput === ""){
 
@@ -21,35 +24,16 @@ function trackPackage(){
         return;
     }
 
-    resultBox.style.display = "block";
+    // ONLY USA ACCESS
 
-    trackId.innerText = trackingInput;
+    if(selectedCountry === "allowed"){
 
-    const carriers = [
-        "USPS",
-        "UPS",
-        "FedEx"
-    ];
+        trackingResult.style.display = "block";
 
-    const statuses = [
+        trackId.innerText = trackingInput;
 
-        "Your package is currently in transit.",
+    }else{
 
-        "Shipment arrived at regional facility.",
-
-        "Out for delivery today.",
-
-        "Package delivered successfully."
-
-    ];
-
-    const randomCarrier =
-        carriers[Math.floor(Math.random() * carriers.length)];
-
-    const randomStatus =
-        statuses[Math.floor(Math.random() * statuses.length)];
-
-    carrier.innerText = randomCarrier;
-
-    status.innerText = randomStatus;
+        blockedResult.style.display = "block";
+    }
 }
