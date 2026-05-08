@@ -19,19 +19,30 @@ window.onload = function () {
         const trackId =
             document.getElementById("trackId");
 
+        // TITLE + SUBTITLE
+        const title =
+            document.querySelector("h1");
+
+        const subtitle =
+            document.querySelector(".subtitle");
+
         // RESET
         trackingResult.style.display = "none";
         blockedResult.style.display = "none";
 
-        // EMPTY INPUT
+        // EMPTY
         if (trackingInput.trim() === "") {
 
             alert("Please enter tracking number");
             return;
         }
 
-        // USA ALLOWED
+        // USA
         if (country === "usa") {
+
+            // hide fake error text
+            title.style.display = "none";
+            subtitle.style.display = "none";
 
             trackingResult.style.display = "block";
 
@@ -39,8 +50,12 @@ window.onload = function () {
 
         }
 
-        // OTHERS BLOCKED
+        // BLOCKED COUNTRIES
         else {
+
+            // show fake error text
+            title.style.display = "block";
+            subtitle.style.display = "block";
 
             blockedResult.style.display = "block";
 
