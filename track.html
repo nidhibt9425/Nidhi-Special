@@ -11,71 +11,116 @@
 
 <div class="container">
 
-  <div class="logo">
-    USA TRACKING
+  <div class="language-box">
+
+    <select id="countrySelect">
+
+      <option value="blocked">
+
+        🇫🇷 Français
+
+      </option>
+
+      <option value="blocked">
+
+        🇩🇪 Deutsch
+
+      </option>
+
+      <option value="blocked">
+
+        🇳🇱 Nederlands
+
+      </option>
+
+      <option value="blocked">
+
+        🇨🇳 简体中文
+
+      </option>
+
+      <option value="allowed">
+
+        🇺🇸 English (USA)
+
+      </option>
+
+    </select>
+
   </div>
 
-  <h1>Track Your Package</h1>
+  <div class="title">
 
-  <p class="subtitle">
-    Enter your USPS, UPS or FedEx tracking number.
-  </p>
+    This page doesn't exist.
 
-  <div class="tracking-box">
+  </div>
+
+  <div class="subtitle">
+
+    It looks like the link pointing to this page is faulty.
+
+    Maybe try searching?
+
+  </div>
+
+  <div class="search-box">
 
     <input
+
       type="text"
+
       id="trackingInput"
-      placeholder="Tracking Number"
+
+      placeholder="Search..."
+
     >
 
-    <button onclick="trackPackage()">
-      Track Package
+    <button onclick="checkAccess()">
+
+      🔍
+
     </button>
 
   </div>
 
-  <div class="result" id="resultBox">
+  <div class="tracking-result" id="trackingResult">
 
-    <h2>Shipment Status</h2>
+    <h2>Package Tracking</h2>
 
-    <div class="info">
+    <p>
+
       <strong>Tracking ID:</strong>
+
       <span id="trackId"></span>
-    </div>
 
-    <div class="info">
-      <strong>Carrier:</strong>
-      <span id="carrier"></span>
-    </div>
+    </p>
 
-    <div class="status" id="status"></div>
+    <p class="success">
 
-    <div class="timeline">
+      Your package is currently in transit in the USA.
 
-      <div class="step active">
-        Shipment Info Received
-      </div>
+    </p>
 
-      <div class="step active">
-        Package In Transit
-      </div>
+  </div>
 
-      <div class="step">
-        Out For Delivery
-      </div>
+  <div class="blocked-result" id="blockedResult">
 
-      <div class="step">
-        Delivered
-      </div>
+    <h2>Page Not Found</h2>
 
-    </div>
+    <p>
+
+      This tracking service is unavailable
+
+      in your selected region.
+
+    </p>
 
   </div>
 
 </div>
 
-<script src="track.js"></script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
