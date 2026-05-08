@@ -11,9 +11,17 @@
 
 <div class="container">
 
-  <div class="language-box">
+  <!-- LANGUAGE -->
+
+  <div class="top-bar">
 
     <select id="countrySelect">
+
+      <option value="usa">
+
+        🇺🇸 English (USA)
+
+      </option>
 
       <option value="blocked">
 
@@ -29,19 +37,13 @@
 
       <option value="blocked">
 
-        🇳🇱 Nederlands
+        🇨🇳 简体中文
 
       </option>
 
       <option value="blocked">
 
-        🇨🇳 简体中文
-
-      </option>
-
-      <option value="allowed">
-
-        🇺🇸 English (USA)
+        🇳🇱 Nederlands
 
       </option>
 
@@ -49,19 +51,23 @@
 
   </div>
 
-  <div class="title">
+  <!-- TITLE -->
+
+  <h1>
 
     This page doesn't exist.
 
-  </div>
+  </h1>
 
-  <div class="subtitle">
+  <p class="subtitle">
 
     It looks like the link pointing to this page is faulty.
 
     Maybe try searching?
 
-  </div>
+  </p>
+
+  <!-- SEARCH -->
 
   <div class="search-box">
 
@@ -75,13 +81,15 @@
 
     >
 
-    <button onclick="checkAccess()">
+    <button onclick="checkTracking()">
 
       🔍
 
     </button>
 
   </div>
+
+  <!-- SUCCESS -->
 
   <div class="tracking-result" id="trackingResult">
 
@@ -102,6 +110,8 @@
     </p>
 
   </div>
+
+  <!-- BLOCK -->
 
   <div class="blocked-result" id="blockedResult">
 
