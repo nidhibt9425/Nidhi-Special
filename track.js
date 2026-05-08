@@ -1,6 +1,6 @@
-function checkTracking(){
+function checkTracking() {
 
-    const selectedCountry =
+    const country =
         document.getElementById("countrySelect").value;
 
     const trackingInput =
@@ -15,29 +15,31 @@ function checkTracking(){
     const trackId =
         document.getElementById("trackId");
 
-    // RESET
-
+    // hide both first
     trackingResult.style.display = "none";
     blockedResult.style.display = "none";
 
-    // EMPTY CHECK
-
-    if(trackingInput.trim() === ""){
+    // empty input check
+    if (trackingInput.trim() === "") {
 
         alert("Please enter tracking number");
         return;
     }
 
-    // USA ONLY
-
-    if(selectedCountry === "usa"){
+    // USA ALLOWED
+    if (country === "usa") {
 
         trackingResult.style.display = "block";
 
         trackId.innerText = trackingInput;
 
-    }else{
+    }
+
+    // OTHER COUNTRIES BLOCKED
+    else {
 
         blockedResult.style.display = "block";
+
     }
+
 }
