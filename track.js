@@ -1,45 +1,51 @@
-function checkTracking() {
+window.onload = function () {
 
-    const country =
-        document.getElementById("countrySelect").value;
+    const button = document.querySelector(".search-box button");
 
-    const trackingInput =
-        document.getElementById("trackingInput").value;
+    button.addEventListener("click", function () {
 
-    const trackingResult =
-        document.getElementById("trackingResult");
+        const country =
+            document.getElementById("countrySelect").value;
 
-    const blockedResult =
-        document.getElementById("blockedResult");
+        const trackingInput =
+            document.getElementById("trackingInput").value;
 
-    const trackId =
-        document.getElementById("trackId");
+        const trackingResult =
+            document.getElementById("trackingResult");
 
-    // hide both first
-    trackingResult.style.display = "none";
-    blockedResult.style.display = "none";
+        const blockedResult =
+            document.getElementById("blockedResult");
 
-    // empty input check
-    if (trackingInput.trim() === "") {
+        const trackId =
+            document.getElementById("trackId");
 
-        alert("Please enter tracking number");
-        return;
-    }
+        // RESET
+        trackingResult.style.display = "none";
+        blockedResult.style.display = "none";
 
-    // USA ALLOWED
-    if (country === "usa") {
+        // EMPTY INPUT
+        if (trackingInput.trim() === "") {
 
-        trackingResult.style.display = "block";
+            alert("Please enter tracking number");
+            return;
+        }
 
-        trackId.innerText = trackingInput;
+        // USA ALLOWED
+        if (country === "usa") {
 
-    }
+            trackingResult.style.display = "block";
 
-    // OTHER COUNTRIES BLOCKED
-    else {
+            trackId.innerText = trackingInput;
 
-        blockedResult.style.display = "block";
+        }
 
-    }
+        // OTHERS BLOCKED
+        else {
 
-}
+            blockedResult.style.display = "block";
+
+        }
+
+    });
+
+};
