@@ -1,4 +1,4 @@
-function checkAccess(){
+function checkTracking(){
 
     const selectedCountry =
         document.getElementById("countrySelect").value;
@@ -15,18 +15,22 @@ function checkAccess(){
     const trackId =
         document.getElementById("trackId");
 
+    // RESET
+
     trackingResult.style.display = "none";
     blockedResult.style.display = "none";
 
-    if(trackingInput === ""){
+    // EMPTY CHECK
+
+    if(trackingInput.trim() === ""){
 
         alert("Please enter tracking number");
         return;
     }
 
-    // ONLY USA ACCESS
+    // USA ONLY
 
-    if(selectedCountry === "allowed"){
+    if(selectedCountry === "usa"){
 
         trackingResult.style.display = "block";
 
